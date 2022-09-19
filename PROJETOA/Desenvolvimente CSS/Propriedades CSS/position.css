@@ -1,0 +1,49 @@
+section {
+    background-color: lightgray;
+    margin: 20px;
+    padding: 20px;
+    width: calc(100% - 400px);
+    position: relative;
+}
+
+div {
+    border: 1px solid #777;
+    height: 250px;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.d1 {
+    background-color: moccasin;
+}
+
+.d1a {
+    background-color: yellow;
+    width: 200px;
+    position: fixed; /*sai do fluxo*/
+    z-index: 1;
+    right: 0px;
+    overflow: auto;
+}
+
+.d1b {
+    background-color: white;
+    height: 70px;
+    z-index: 1;
+}
+
+.d2 {
+    background-color: lightskyblue;
+}
+
+.d3 {
+    background-color: lightgreen;
+    position: absolute;
+    top: 0px;
+}
+
+.d4 {
+    background-color: lightsalmon;
+}
