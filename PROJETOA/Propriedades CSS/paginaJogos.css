@@ -1,0 +1,72 @@
+/* Formatção da Estrutura */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aqua;
+    height: 80px;
+    padding: 20px;
+    background: url(imgs/logo.jpg);
+}
+
+main {
+        background-color:  blanchedalmond;
+        width: 70%;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box; /*Faz com que os 70% do bloco sejam considerados junto ao 20px do padding*/
+    }
+    
+    aside {
+        background-color: lightpink;
+        width: 30%;
+        float: left;
+        box-sizing: border-box;
+}
+
+footer {
+    background-color: yellow ;
+    clear: both;
+}
+
+/* Componente Menu Principal */
+.caixa-menuprincipal {
+    float: right;
+}
+
+.caixa-menuprincipal ul {
+    list-style-type: none;
+}
+
+.caixa-menuprincipal ul li {
+    display: inline-block;
+}
+
+.caixa-menuprincipal ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: burlywood;
+    padding: 10px ;
+    font-weight: bold;
+}
+
+.caixa-menuprincipal ul li a:hover {
+        background-color: cornflowerblue;
+    }
+
+/* Componente Postagem */
+.caixa-post {
+
+}
+
+/* Componente Pesquisa */
+.caixa-pesquisa {
+
+}
