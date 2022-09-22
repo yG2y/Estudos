@@ -11,7 +11,8 @@ p {
 
 /*seletores de atributos class*/
 .leia-mais {
-    text-align: right; /*Direciona o texto a direita da página*/
+    text-align: right;
+    /*Direciona o texto a direita da página*/
 }
 
 /*seletores de atributos quaisquer*/
@@ -30,6 +31,7 @@ p::first-letter {
 }
 
 /*seletores universal*/
-* { /*selecionou todos os elementos*/
+* {
+    /*selecionou todos os elementos*/
     margin: 0;
 }
