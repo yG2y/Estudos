@@ -1,3 +1,35 @@
+/*seletores de elementos html*/
 p {
-    
+    font-family: Arial;
+    background-color: yellow;
+}
+
+/*seletores de atributos id*/
+#menu-principal {
+    background-color: lightgray;
+}
+
+/*seletores de atributos class*/
+.leia-mais {
+    text-align: right; /*Direciona o texto a direita da página*/
+}
+
+/*seletores de atributos quaisquer*/
+[src] {
+    float: right;
+}
+
+/*seletores de atributos pseudo-classes*/
+p:hover {
+    color: red;
+}
+
+/*seletores de atributos pseudo-elementos*/
+p::first-letter {
+    font-size: xx-large;
+}
+
+/*seletores universal*/
+* { /*selecionou todos os elementos*/
+    margin: 0;
 }
