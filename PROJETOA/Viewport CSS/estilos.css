@@ -1,4 +1,3 @@
-
 /* Comportamento normal Desktop */
 
 body {
@@ -15,6 +14,10 @@ body {
 
 .conteudo {
     padding: 20px;
+}
+
+.conteudo p {
+    font-family: '8BIT WONDER', sans-serif;   /* Aplicando font 8-bits */                                    
 }
 
 /* Breakpoints para resoluções específicas (smartphones, tablets, dispositivos pequenos)*/
