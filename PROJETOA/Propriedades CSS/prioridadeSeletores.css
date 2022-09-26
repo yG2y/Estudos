@@ -1,0 +1,19 @@
+/*ordem de leitura*/      /*ESPECIFICIDADE*/
+li { color: red; }    /*0,0,0,1*/
+li { color: blue; }   /*0,0,0,1*/
+li { color: orange; } /*0,0,0,1*/
+
+/*por ser class, esta regra sobrepôs mesmo estando por ultimo na ordem de leitura*/
+li.active {     
+    color: green;     /*0,0,1,1*/
+}
+
+#menu-principal li {
+    color: violet; /*0,1,0,1*/
+}
+
+footer > ul > li {
+    color: red;   /*0,0,0,1*/
+    color: orange !important;   
+    color: blue;  /*0,0,0,1*/
+}

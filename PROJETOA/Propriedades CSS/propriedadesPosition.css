@@ -2,7 +2,7 @@ section {
     background-color: lightgray;
     margin: 20px;
     padding: 20px;
-    width: calc(100% - 400px);
+    width: calc(100% - 277px);
     position: relative;
 }
 
@@ -21,17 +21,17 @@ div {
 
 .d1a {
     background-color: yellow;
+    position: fixed;
     width: 200px;
-    position: fixed; /*sai do fluxo*/
     z-index: 1;
     right: 0px;
     overflow: auto;
-}
+} 
 
 .d1b {
     background-color: white;
     height: 70px;
-    z-index: 1;
+    z-index: -1;
 }
 
 .d2 {

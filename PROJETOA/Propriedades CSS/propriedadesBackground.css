@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(imgs/e\ o\ curso.jpg);
+    background-image: url(./imgs/fundo.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -12,8 +12,9 @@ body {
 }
 
 div {
-    background-image: linear-gradient(white, lightblue);
-    opacity: 80%;
+    background-image: linear-gradient(white, rgb(109, 79, 79));
+    background-color: white;
+    opacity: 40%;
     width: 70%;
     margin: 15px auto;
     clear: both;
@@ -21,13 +22,8 @@ div {
     padding: 8px;
 }
 
-/*div p img {
-    float: left;
-}
-*/
-
-.image_news {
+.img_news {
     float: left;
     margin: 8px;
-    width: 80px;
+    width: 130px;
 }
