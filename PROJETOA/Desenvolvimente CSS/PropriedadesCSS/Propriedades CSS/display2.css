@@ -1,0 +1,67 @@
+/*display: none = o elemento não será exibido
+
+  display: block = o elemento é renderizado como um elemnt bloco, mesmo que ele seja um elemento
+  inline como um hyperlink.
+
+  display: inline = O elemento será renderizado como um elemento inline, mesmo que ele seja um
+  elemento de bloco como o list item (<li>).
+
+  display: inline-block = O elemento é rendererizado como um bloco, porém em linha com os demais elementos.
+  */
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+  }
+
+  h1 {
+    font-size: 250%;
+    background-color: lightgray;
+    background-image: linear-gradient(white, rgb(247, 103, 170));
+    margin:3% 40%;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 30px;
+    line-height: 35px;
+  }
+div p {
+    font-size: 10pt;
+    text-align: justify;
+}
+h2 {
+    font-style: italic;
+    color: crimson;
+    font-weight: lighter; /*espessura das letras*/
+    line-height: 12pt;
+  }
+
+  .destaque { 
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  div p img {
+    display: block; 
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+  div {
+    background-image: linear-gradient(white, rgb(255, 152, 200));
+    opacity: 86%;
+
+    display: inline-block;
+    width: calc(33% - 16px);
+    background-color: #DDD;
+    vertical-align: top;
+    margin: 8px;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }

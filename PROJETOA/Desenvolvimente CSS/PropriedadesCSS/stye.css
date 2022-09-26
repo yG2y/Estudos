@@ -1,0 +1,35 @@
+html {
+    background-color: rgb(184, 184, 184)
+}
+
+body {
+    /*color: orangered;*/
+    /*color: #00ff00;*/
+    /*color: #0f0;*/
+    /*color: #555555;*/ /*cinza*/
+    /*color: #555;*/
+    /**/color: rgb(171, 36, 212);
+} 
+
+h1 {
+    /*font-size: 20pt;*/
+    /*font-size: 0.5cm;*/
+    /**/font-size: 150%;
+    
+}
+
+p {
+    color: #41180491;
+    /*font-size: 150%;*/
+    /*font-size: 20pt;*/
+    /**/font-size: 0.5cm;
+}
+
+img {
+    display: block;/*O block fez com que a imagem fosse apresentada em uma faixa particular*/
+    
+    margin: 0 auto;/*O auto definiu que na associação do relógio, a imagem ocupasse o meio
+    de todas as direções quando escrito "0"*/
+   
+    width: 500px; /*tamanho da imagem*/
+} 
