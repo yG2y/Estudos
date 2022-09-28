@@ -1,3 +1,4 @@
+/*Definições gerais - Início*/
 html {
     height: 100%;
 }
@@ -5,13 +6,8 @@ html {
 body, ul, li, p {
     margin: 0px;
     padding: 0px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-.header   a {
-    text-decoration: none; 
-    color: white;   
 }
 
 h1 {
@@ -22,6 +18,13 @@ h1 {
 img {
     max-width: 100%;
     display: block;
+}
+/*Definições gerais - Fim*/
+
+/*Cabeçalho - Início*/
+.header a {
+    text-decoration: none; 
+    color: white;   
 }
 
 .header {
@@ -41,7 +44,9 @@ img {
     list-style: none;
     margin-left: 10px;
 }
+/*Cabeçalho - Fim*/
 
+/*Rodapé - Início*/
 .footer {
     background: #727272;
     color: white;
@@ -51,3 +56,20 @@ img {
     align-items: center;
     padding: 20px;
 }
+/*Rodapé - Fim*/
+
+/*CSS Flexbox 1 - Início*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+
+/*CSS Flexbox 1 - Fim*/
