@@ -1,0 +1,82 @@
+
+img.navbar-brand {
+    width: auto;
+    height: 8vh;
+    
+}
+i.bi-search{
+    font-size: 1.3rem;
+    color: #ffd700 !important;
+    margin: 0px 15px;
+}
+
+
+.cabecalho{
+    background-color: rgb(20, 18, 18);
+    height: 10vh;
+    padding: auto;
+}
+
+.games{
+    padding: 20px !important;
+}
+
+.cabecalho{
+    background-color: rgb(32, 32, 32);
+}
+
+.titulo {
+    padding: 15px;
+    color: #ffd700;
+    text-align: center;
+}
+
+.game {
+    background-color: black;
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: justify;
+}
+
+.divImgGame{
+    width: auto;
+}
+.divInfoGame{
+    color: aliceblue;
+}
+.img {
+    margin-right: 15px;
+    margin-bottom: 25px;
+    float: left;
+    max-width: 100%;
+}
+
+i {
+    color: #ffd700;
+    width: 120px;
+    margin-bottom: 15px;
+}
+
+.footer_area{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer{ 
+    padding: 20px;
+    background: rgb(32, 32, 32);
+    color: white;
+}
+.logo{
+    max-width:64px;
+    max-height:64px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+}
