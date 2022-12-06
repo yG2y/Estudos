@@ -1,0 +1,55 @@
+body {
+  background: url(./background.jpg);
+  }
+
+  .head {
+    background-color: white;
+  }
+
+  .navbar {
+    background-color: black;
+  }
+
+  .car {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+
+  .foot {
+    background-color: white;
+  }
+
+  .lista-jogos{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .videos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 15px;
+  }
+
+  footer {
+    background-color: white;
+  }
+
+  .d-footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+
+  .Lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
