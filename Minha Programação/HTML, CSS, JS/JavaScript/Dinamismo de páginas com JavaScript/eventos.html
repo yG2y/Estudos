@@ -16,12 +16,20 @@
             if (confirma) alert('Operação confirmada');
             else (olae());
         }
+        onload = () => {
+            bt.onclick = () => ola();
+        };
     </script>
+    <style>
+        button{
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <!-- load é um evento, quando necessária fazer a busca.
 buscar por "mdn event reference" -->
-<body onload="ola()">
-    <p>Olá mundo em JavaScript</p>
+<body>
+    <p><button id="bt">Olá</button></p>
 </body>
  
 </html>
