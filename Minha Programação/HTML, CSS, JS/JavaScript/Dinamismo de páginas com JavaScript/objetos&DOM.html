@@ -8,12 +8,47 @@
     <script>
         window.onload = () => {
             let intro = document.getElementById('introducao');
-            intro.innerText = 'Nova <strong>introdução</strong>';
-            intro.style.fontWeight = 'bolt';
+            // intro.innerText = 'Nova <strong>introdução</strong>';
+            intro.innerHTML
+            intro.style.textAlign = 'center';
+            intro.style.fontWeight = 'bold';
             intro.style.border = 'thin solid black';
+            intro.style.padding = '10px 5px';
+            intro.style.backgroundColor = '#DDF';
 
+            bt.onclick = () => {
+                let lista = document.getElementById('lista');
+                lista.innerHTML += '<li>Item</li>';
+            }
             // intro.innerHTML = 'Nova <strong>introdução</strong>';
             // poderia também se escrito assim -> document.getElementById('introducao').intro.innerText = 'Nova <strong>introdução</strong>';
+            
+            let li = document.getElementById('l1');
+            li.style.color = 'red';
+
+            // poderia também se escrito assim -> document.getElementById('l1').style.color = 'red';
+
+            btt.onclick = () => {
+                let li = document.getElementsByClassName('cor');
+                for (let i = 0; i < li.length; i++)
+                li[i].style.color = 'red';
+            };
+
+            bttr.onclick = () => {
+                let li = document.getElementsByTagName('li');
+                for (let i = 0; i < li.length; i++)
+                li[i].style.color = 'green';
+            }
+            let lir = document.querySelector('.lir');
+            lir.style.color = 'gray';
+
+            let l5 = document.querySelector('#l5');
+            l5.style.color = 'blue';
+            
+            let lire = document.querySelectorAll('li');
+            console.log(li)
+
+            console.log(lista);
         };
         document.
         navigator;
@@ -24,5 +59,31 @@
     <p id="introducao">
         Bem-vindos ao curso de JavaScript.
     </p>
+    <ul id="lista">
+        <li>Item</li>
+    </ul>
+    <button id="bt">+</button>
+    <p></p>
+    <ul id="listar">
+        <li id="l1" class="cor">1° Item</li>
+        <li id="l2" class="cor">2° Item</li>
+        <li id="l3" class="cor">3° Item</li>
+    </ul>
+    <button id="btt">+</button>
+
+    <p></p>
+    <ul id="listare">
+        <li id="l4" class="lir">1° Item</li>
+        <li id="l5">2° Item</li>
+        <li id="l6">3° Item</li>
+    </ul>
+    <button id="bttr">+</button>
+
+    <p></p>
+    <ul id="listares">
+        <li id="listares">1° item</li>
+        <li id="listares">2° item</li>
+        <li id="listares">3° item</li>
+    </ul>
 </body>
 </html>
