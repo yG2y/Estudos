@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <script>
+        window.onload = () => {
+            nome.onfocus = () => console.log('O campo nome recebeu o foco');
+            senha.onfocus = () => console.log('O campo senha recebeu o foco');
+
+            nome.onblur = () => console.log('O campo nome perdeu o foco');
+            senha.onblur = () => console.log('O campo senha perdeu o foco');
+            
+            nome.onfocus = () => {
+                instrucoes.innerHTML = 'Informe o seu nome';
+                instrucoes.style.color = '#999';
+            };
+            nome.onblur = () => {
+                if (nome.value.length == 0) {
+                    instrucoes.innerHTML = 'O nome não pode ficar em branco';
+                    instrucoes.style.color = 'red';
+                    nome.style.border = 'thin red solid';
+                } else instrucoes.innerHTML = '';
+            };
+
+            senha.onfocus = () => {
+                instrucoese.innerHTML = 'Informe o seu senha';
+                instrucoese.style.color = '#999';
+            };
+            senha.onblur = () => {
+                if (senha.value.length == 0) {
+                    instrucoese.innerHTML = 'O senha não pode ficar em branco';
+                    instrucoese.style.color = 'red';
+                } else instrucoese.innerHTML = '';
+            };
+
+            nome.onchange = () => console.log('change', nome.value);
+            senha.onchange = () => console.log('change', senha.value);
+
+            nome.oninput = () => console.log('input', nome.value);
+            senha.oninput = () => console.log('input', senha.value.length);
+            
+            nome.oninput = () => {
+                let caracteresInvalidos = '!@#$%¨&*()-=<>,.;[]{}';
+                let ultimoCarater = nome.value.charAt(nome.value.length - 1);
+                console.log('Ultimo caráter', ultimoCarater);
+                if (caracteresInvalidos.indexOf(ultimoCarater)>=0)
+                nome.value = nome.value.substr(0,nome.value.length - 1);
+                
+                
+                // maneira reduzida
+                // if  (
+                //     '!@#$%¨&*()-=<>,.;[]{}'.indexOf(
+                //         nome.value.charAt(nome.value.length - 1)
+                //     )>=0
+                // )
+                // nome.value = nome.value.substr(0,nome.value.length - 1);
+                
+                // substr 'substring'serve para tirar um pedaço da string que vai de 0 até uma posição
+            
+                nome.value = nome.value.toUpperCase(); // Deixa tudo maiúsculo
+                // nome.value = nome.value.toLowerCase(); Deixa tudo minusculo
+
+                
+            }
+    }
+    </script>
+</head>
+<body>
+    <!-- method="post" faz os dados irem "escondidos" para servidor dentro de uma mensagem http-->
+    <form action="login.php" method="post">
+        <p>
+        <label for="nome">Nome: </label>
+        <!-- autocomplete="off" serve para qua não apareçam recomendações no campo de nome em questão. -->
+        <input type="text" id="nome" name="nome" autocomplete="off">
+        <span id="instrucoes"></span>
+        </p>
+        <p><label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha">
+        <span id="instrucoese"></span>
+        </p>
+        <p><button type="submit">Enviar</button></p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <script>
+        window.onload = () => {};
+    </script>
+</head>
+<body>
+    <!-- method="post" faz os dados irem "escondidos" para servidor dentro de uma mensagem http-->
+    <form action="login.php" method="post">
+        <p>
+        <label for="nome">Nome: </label>
+        <!-- autocomplete="off" serve para qua não apareçam recomendações no campo de nome em questão. -->
+        <input type="text" id="nome" name="nome" autocomplete="off">
+        </p>
+        <p><label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha">
+        </p>
+        <p><button type="submit">Enviar</button></p>
+    </form>
+</body>
+</html>
