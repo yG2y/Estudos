@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos de Salada</title>
+    <script>
+        window.onload = () => {
+        nome.onchange = () => console.log(nome.value);
+        salada.onchange = () => console.log(salada.value); 
+        
+        let escolheMolho = () => {
+            console.log('molho1 =',molho1.checked);
+            console.log('molho2 =',molho2.checked);
+            console.log('molho3 =',molho3.checked);
+        }
+        
+        molho1.onchange = escolheMolho;
+        molho2.onchange = escolheMolho;
+        molho3.onchange = escolheMolho;
+
+        pao.onchange = () => console.log('Pão Francês =',pao.checked);
+        // checked responde true no colosole se selecionado
+        sobremesa.onchange = () => console.log('Sobremesa =',sobremesa.checked);    
+        };
+    </script>
+</head>
+<body>
+    <p>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nnome" id="nome" autocomplete="off">
+    </p>
+    <p>
+        <label for="salada">Salada</label>
+        <select id="salada" name="nsalada">
+            <option value="Verde (folhas e palmito)">Verde (folhas e palmito)</option>
+            <option value="1">Caprese</option>
+            <option value="2">Caesar</option>
+            <!-- selected faz o option se tornar padrão. -->
+            <option value="3" selected>Rúcula e pêras</option>
+            <option value="4">Salmão</option>
+        </select>
+    </p>
+    <p>
+       Molho:
+       <input type="radio"  id="molho1" name="nmolho" value="0" checked /> 
+       <label for="molho1">Nenhum</label>
+       <input type="radio"  id="molho2" name="nmolho" value="1"  /> 
+       <label for="molho2">Mostarda e Mel</label> 
+       <input type="radio"  id="molho3" name="nmolho" value="2"  /> 
+       <label for="molho3">Queijos</label> 
+    </p>
+    <p>Complementos:
+        <input type="checkbox" name="npao" id="pao" checked>
+        <label for="pao">Pão Francês</label>
+        <input type="checkbox" name="nsobremesa" id="sobremesa" checked>
+        <label for="sobremesa">Sobremesa</label>
+    </p>
+</body>
+</html>
