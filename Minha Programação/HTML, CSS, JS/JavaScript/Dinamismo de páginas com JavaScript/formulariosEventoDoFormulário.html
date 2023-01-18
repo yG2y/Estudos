@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script>
+        window.onload = () => {
+            login.onsubmit = (evento) => {
+                console.log({nome: nome.value, senha: senha.value });
+                console.log(evento);
+                // Qual o tipo de elemento
+                console.log(evento.type);
+                // Elemento onde ocorreu
+                console.log(evento.target);
+                // Nome do evento
+                console.log(evento.target.id);
+                //Não permite o envio do formulário
+                evento.preventDefault();
+                // if (nome.value.length == 0 || senha.value.length == 0) {
+                //     alert('Campos não podem ficar em branco.')
+                //     return false;
+                // }
+                return false;
+            };
+
+            // Verifica se os inputs estão preenchidos, se não estiverem, não permitem confirmar.
+            // btn_submit.disabled = true;
+            // let validaForm = () => {
+            //     if (nome.value.length == 0 || senha.value.length == 0) 
+            //     btn_submit.disabled = true;
+            //     else btn_submit.disabled = false;
+            // };
+            // nome.onchange = validaForm;
+            // senha.oninput = validaForm;
+        };
+    </script>
+</head>
+
+<body>
+    <form id="login" action="https://postman-echo.com/post" method="post">
+        <p>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nnome" id="nome" autocomplete="off">
+        </p>
+        <p>
+            <label for="senha">Senha: </label>
+            <input type="password" name="nsenha" id="senha">
+        </p>
+        <p>
+            <label for="conectado">Permanecer conectador?</label>
+            <input type="checkbox" name="nconectado" id="conectado">
+        </p>
+        <p>
+            <button id="btn_submit" type="submit">Confirmar</button>
+        </p>
+    </form>
+
+</body>
+
+</html>
