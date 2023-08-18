@@ -49,12 +49,13 @@ img {
 /*CSS Rodapé - Inicio */
 .footer {
     background: rgb(31, 93, 99);
+    position: fixed;
     color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 /*CSS Rodapé - Fim */
 
