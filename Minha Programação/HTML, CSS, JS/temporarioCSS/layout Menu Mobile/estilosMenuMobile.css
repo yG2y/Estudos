@@ -22,12 +22,49 @@ img {
 /* Definições gerais - Fim*/
 
 /*CSS Cabeçalho - Inicio */
+.header {
+    background: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin-left: 10px;
+}
+/*CSS Cabeçalho - Fim */
+
+/*CSS Rodapé - Inicio */
+.footer {
+    background: gray;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+/*CSS Rodapé - Fim */
+
+/*CSS Cabeçalho - Inicio */
 .header   a {
     text-decoration: none; 
     color: white;   
 }
 
-.header {       
+.header {
     background: #727272;
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +97,8 @@ img {
 /*CSS Rodapé - Fim */
 
 /*Menu Mobile- Início*/
-#menuToggle{
+
+#menuToggle {
     display: none;
 }
 
@@ -87,16 +125,16 @@ img {
         position: fixed;
         flex-wrap: wrap;
         align-content: center;
-        top: 0px;
         left: 0px;
+        top: 0px;
         width: 100%;
         height: 0%;
-        background-color: rgba(0,0,0,0.7);
+        background-color: black;
         overflow: hidden;
 
         transition: height 0.3s;
     }
-
+    
     .menu li {
         display: block;
         width: 100%;
@@ -121,76 +159,5 @@ img {
         line-height: 60px;
         z-index: 999;
     }
-
-    .menu-icon i {
-        font-size: 1.7em;
-    }
-
-    #menuToggle:checked ~ label i:nth-child(2) {
-        display: block;
-    }
-
-    #menuToggle:checked ~ label i:first-child {
-        display: none;
-    }
-
-    #menuToggle:not(checked) ~ label i:first-child {
-        display: block;
-    }
-
-    #menuToggle:not(checked) ~ label i:nth-child(2) {
-        display: none;
-    }
-
-    #menuToggle:checked ~ ul {
-        height: 100%;
-    }
-}
+}       
 /*Menu Mobile- Fim */
-
-/* CSS Grid 1 - inicio.*/
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /*poderia ser também repeat(3, 1fr)*/
-    grid-gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-.card {
-    background: red;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-gap: 10px;
-}
-
-.banner {
-    grid-column: 3;
-    grid-row: 2 / 5;
-}
-
-.banner img{
-    height: 280px;
-}
-
-@media screen and (max-width:600px) {
-    
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .card {
-        display: block;
-    }
-
-    .card:nth-child(9) {
-        display: none;
-    }
-
-    .banner {
-        display: none;
-    }
-}
-
-/* CSS Flexbox 1 - fim.*/
