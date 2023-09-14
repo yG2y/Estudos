@@ -16,13 +16,14 @@
 </template>
 <script>
 import InputText from './form/InputText.vue'
-import Submit from './form/Submit.vue'
+import Submit from './form/Submit.vue';
+
 
 export default {
     components: {
-        InputText,
-        Submit,
-    },
+    InputText,
+    Submit,
+},
     name: 'Form'
 }
 </script>
